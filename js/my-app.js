@@ -1,5 +1,5 @@
 // Initialize your app
-var BookflyApp = new Framework7({
+var wejhatApp = new Framework7({
     modalTitle: 'My App',
     // If it is webapp, we can enable hash navigation:
     pushState: true,
@@ -29,10 +29,10 @@ var BookflyApp = new Framework7({
 	
     // Hide and show indicator during ajax requests
     onAjaxStart: function (xhr) {
-        BookflyApp.showIndicator();
+        wejhatApp.showIndicator();
     },
     onAjaxComplete: function (xhr) {
-        BookflyApp.hideIndicator();
+        wejhatApp.hideIndicator();
     },
 
 });
@@ -40,7 +40,7 @@ var BookflyApp = new Framework7({
 // Export selectors engine
 var $$ = Dom7;
 // Add view
-var mainView = BookflyApp.addView('.view-main', {
+var mainView = wejhatApp.addView('.view-main', {
    domCache: true,
 });
 
@@ -50,7 +50,7 @@ var TPHotelUrl ='https://apphotel.wejhat.com/hotels';
 var TPFlightUrl ='https://appflights.wejhat.com/flights';
 var marker='151794';
 
-BookflyApp.onPageInit('index', function (page) {
+wejhatApp.onPageInit('index', function (page) {
 $$('.pageFlashLoaderKK').show();	
 setTimeout(function(){ $$('.pageFlashLoaderKK').hide('slow'); }, 3000);	
 
@@ -133,7 +133,7 @@ if(page.name=='search-hotels'){
 	var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 	
     var today =new Date();
-	var calendarRange = BookflyApp.calendar({
+	var calendarRange = wejhatApp.calendar({
     input: '#appCalendar',
     dateFormat: 'M dd yyyy',
     rangePicker: true,
@@ -323,7 +323,7 @@ if(page.name=='search-hotels'){
   
   
   /*=== Auto suggetion ===*/
-  var autocompleteDropdownAjax = BookflyApp.autocomplete({
+  var autocompleteDropdownAjax = wejhatApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup'),
     openIn: 'popup',
 	backOnSelect: true,
@@ -380,8 +380,8 @@ if(page.name=='search-hotels'){
   
    var hotelObject = [];
    $$('.findHotelResults').on('click', function(e){
-	   var formData = BookflyApp.formToData('#searchHotel_frm');
-	   BookflyApp.formStoreData('HotelRequestData',formData);
+	   var formData = wejhatApp.formToData('#searchHotel_frm');
+	   wejhatApp.formStoreData('HotelRequestData',formData);
 	  
 	 var adults =$$('#adults_0').val(); 
 	 var childs =$$('#childs_0').val();
@@ -430,7 +430,7 @@ if(page.name=='search-flights'){
     var weekday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 	var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     var today =new Date();
-	var calendarRange = BookflyApp.calendar({
+	var calendarRange = wejhatApp.calendar({
 	input: '#appCalendar',
 	dateFormat: 'M dd yyyy',
 	rangePicker: true,
@@ -455,7 +455,7 @@ if(page.name=='search-flights'){
 	   }
 	});	
    /*=== Activity Auto suggetion ===*/	
-   var autocompleteDropdownAjax = BookflyApp.autocomplete({
+   var autocompleteDropdownAjax = wejhatApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup'),
 	openIn: 'popup',
 	backOnSelect: true,
@@ -501,7 +501,7 @@ if(page.name=='search-flights'){
 	}
   });
 
-  var autocompleteDropdownAjax = BookflyApp.autocomplete({
+  var autocompleteDropdownAjax = wejhatApp.autocomplete({
 	opener: $$('#autocomplete-standalone-popup-to'),
 	openIn: 'popup',
 	backOnSelect: true,
