@@ -46,9 +46,9 @@ var mainView = BookflyApp.addView('.view-main', {
 
 
 var RequestURL ='https://www.adivaha.com/demo/MobAppRequest';
-var TPHotelUrl ='https://apphotel.bookingfly.net/hotels';
-var TPFlightUrl ='https://appflight.bookingfly.net/flights';
-var marker='155364';
+var TPHotelUrl ='https://apphotel.wejhat.com/hotels';
+var TPFlightUrl ='https://appflights.wejhat.com/flights';
+var marker='151794';
 
 BookflyApp.onPageInit('index', function (page) {
 $$('.pageFlashLoaderKK').show();	
