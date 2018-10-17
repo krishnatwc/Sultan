@@ -28,7 +28,7 @@
     border: 2px solid #ddd;
     padding: 18px 0px 0px 0px;*/
     font-size: 40px;    display: inline;}
-.buttonhomecard .card-content{width: 80%;margin: 0 auto;}
+.buttonhomecard .card-content{width:100%;margin: 0 auto;}
 	
 .contentblock1 li a .displaysection {
     display: block;
@@ -38,7 +38,7 @@
 .buttonhomecard{    background-color: transparent;
       float: left;
     width: 100%;
-    margin: 42px 0px 0px 0px;
+    margin: 42px 0px 65px 0px;
     box-shadow: none;
 ;}
 .carBackColor{/*position: relative;top: 8em;    margin-top: 57px;*/}
@@ -595,7 +595,7 @@ margin-top: 10%;}
 .BontentBlockDrawer .content-block p{margin: 0px;position: relative;z-index: 9;}	
 .overlayContent{position: absolute;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0,0,0,0.5);z-index: 2;cursor: pointer;}
 .mobileLogo{position: absolute;top: 1em;left: 0px;right: 0pc;}	
-.panel-background .close-panel{float: right;}
+.panel-background .close-panel{float: right;position: relative;z-index: 999;}
 .panel-background .close-panel .fa{font-size: 25px;color: #fff;font-weight: 100;position: relative;top: 10px;}
 .list-menu-mobile{}	
 .list-menu-mobile ul{list-style: none;margin: 0px;padding: 0px;}
@@ -816,7 +816,7 @@ margin-top: 10%;}
 .resultpagetop{}	
 .resultpagehotels{white-space: pre-line ! important; max-width: 284px !important;font-size: 13.5px;overflow: hidden;font-weight: 500;}
 
-.history-home-page{    background-color: #d1771b;width: 95%;margin: 0 auto;clear: both;border-radius: 2px;overflow: hidden;    padding: 8px;    margin-top: 10px;}
+.history-home-page{    background-color: rgb(209, 119, 27,0.6);width: 95%;margin: 0 auto;clear: both;border-radius: 2px;overflow: hidden;    padding: 8px;    margin-top: 10px;}
 .history-home-page-main{}
 .history-home-page-main-left{    float: left;
     width: 17%;
@@ -902,7 +902,8 @@ float: left;
     border: 1px solid #fff;
 }
 
-.HomeLogoimg{text-align: center;float: left;width: 100%;}
+.HomeLogoimg{text-align: center;float: left;width: 100%;    position: relative;
+    top: -30px;}
 .history-recents{}
 .history-recents-left{float:left;width:100%;}
 .deltopatfri1{float: left;width: 70%;}
@@ -915,40 +916,16 @@ float: left;
 .economyadlet{padding-left: 30px;}
 .economyadlet .fa{}
 
-.lds-grid-loading{    position: fixed;
-    z-index: 9999;
-    text-align: center;
-    background-color: #d1771b;
-    height: 100%;
-    width: 100%;}
-
-
-.lds-grid{position: relative;top: 45%;left: 0px;right: 0px;}
-
-
-.rund-imagebck{font-size: 25px;background: url(../img/ioncs-backgrundimage.png) center no-repeat;
-    height: 220px;
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;    position: relative;}
-.rund-imagebck a{    position: absolute;
-    top: 34%;
-    color: #db8433 !important;
+.lds-grid-loading{position: fixed;z-index: 9999;text-align: center;background-color: #d1771b;height: 100%;width: 100%;}
+.lds-grid{position: relative;top: 25%;left: 0px;right: 0px;}
+.rund-imagebck{margin: 0 auto;text-align: center; position: relative;float: left;width: 50%;top: 33px;}
+.rund-imagebck a{     color: #ffffff !important;
     font-size: 21px;
-    left: 68px;}
-.rund-imagebck:after { 
-    content: "";
-	    border: 2px solid #d88033;
-    height: 134px;
-    position: absolute;
-    top: -59px;
-    left: 99px;
-    z-index: -1;
-}	
-	
-	
-	
-	
-	
+    border-radius: 40px;
+    border: solid #ffffff 2px;
+    display: inline-block;
+    padding: 24px;
+    background-color: #d1771b;}
+.rund-imagebck:after { }	
 .rund-imagebck i{}
 .rund-imagebck span{}
